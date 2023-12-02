@@ -13,7 +13,7 @@ const precos = {
   let totalCompra = 0;
 let carrinho = [];
 
-function adicionarAoCarrinho(edindin) {
+function adicionarAoCarrinho(dindin) {
   const itemExistente = carrinho.find(item => item.nome === dindin);
 
   if (itemExistente) {
