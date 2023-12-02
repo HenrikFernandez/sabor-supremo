@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sabor supremo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <img src="imagem/sabor supremo.jpg" alt="">
+    <h1>Sabor supremo</h1>
+    <!-- Aqui você pode adicionar elementos do topo que desejar -->
+  </header>
+
+  <main>
+    <section class="dindins">
+      <h2>Escolha seu dindin:</h2>
+      <div class="gourmet-list">
+        <!-- Lista de empadas para escolha -->
+        <div class="dindin">
+          <h3>DINDIN GOURMET CHOCOLATE</h3>
+          <img src="imagem/chocolate.jpg" alt="chocolate">
+          <p>maracuja cremoso com casquinha de chocolate preto</p>
+          <p>Preço R$ 3,00 </p>
+          <button onclick="adicionarAoCarrinho('chcolate gourmet')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="dindin">
+            <h3>DINDIN GOURMET MARACUJÁ</h3>
+            <img src="imagem/maracuja.jpg" alt="maracuja">
+            <p>chocolate cremoso com casquinha de chocolate branco</p>
+            <p>Preço R$ 3,00 </p>
+            <button onclick="adicionarAoCarrinho('maracuja gourmet')">Adicionar ao Carrinho</button>
+          </div>
+        <div class="dindin">
+          <h3>DINDIN GOURMET DE PRESTIGIO</h3>
+          <img src="imagem/prestigio.jpg" alt="prestigio">
+          <p>coco com chocolate</p>
+          <p>Preço R$ 3,00 </p>
+          <button onclick="adicionarAoCarrinho('prestigio gourmet)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="dindin">
+            <h3>DINDIN GOURMET MORANGO</h3>
+            <img src="imagem/morango.jpg" alt="morango">
+            <p>morango cremoso com casquinha de chocolate preto</p>
+            <p>Preço R$ 3,00 </p>
+            <button onclick="adicionarAoCarrinho('morango gourmet')">Adicionar ao Carrinho</button>
+          </div>
+          <div class="dindin">
+            <h3>DINDIN TRADICIONAL MARACUJÁ</h3>
+            <img src="imagem/tradicional.jpg" alt="maracuja">
+            <p>MARACUJÁ</p>
+            <p>Preço R$ 1,00 </p>
+            <button onclick="adicionarAoCarrinho('maracuja')">Adicionar ao Carrinho</button>
+          </div>
+          <div class="dindin">
+            <h3>DINDIN TRADICIONAL MORANGO</h3>
+            <img src="imagem/tradicional.jpg" alt="morango">
+            <p>MORANGO</p>
+            <p>Preço R$ 1,00 </p>
+            <button onclick="adicionarAoCarrinho('morango')">Adicionar ao Carrinho</button>
+          </div>
+          <div class="dindin">
+            <h3>DINDIN TRADICIONAL CHOCOLATE</h3>
+            <img src="imagem/tradicional.jpg" alt="chocolate">
+            <p>CHOCOLATE</p>
+            <p>Preço R$ 1,00 </p>
+            <button onclick="adicionarAoCarrinho('chocolate')">Adicionar ao Carrinho</button>
+          </div>
+        <!-- Outras empadas aqui... -->
+      </div>
+
+    </section>
+    
+      <footer class="footer">
+        <aside class="carrinho">
+          <h2>Carrinho</h2>
+          <ul id="carrinho-lista">
+            <!-- Itens do carrinho aparecerão aqui -->
+          </ul>
+          <p>Total: R$ <span id="total">0.00</span></p>
+          <button onclick="enviarPedidoWhatsApp()">Enviar Pedido por WhatsApp</button>
+        </aside>
+        
+
+      </footer>
+    
+    
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

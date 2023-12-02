@@ -1,0 +1,124 @@
+/* Estilos para o site */
+/* Estilize conforme necessário */
+
+body {
+    background: linear-gradient(to right, blue, #55b876, blue);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar {
+    background: linear-gradient(to right, white, black, white);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .top-bar img{
+    width: 200px;
+    height: 200px;
+    border:5px solid black ;
+    border-radius: 20px;
+  }
+  
+  .dindins {
+    width: 70%;
+    float: left;
+    margin-left: 20%;
+  }
+  
+  .dindin {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .dindin img {
+    width: 30%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 20px;
+  }
+  
+  .carrinho {
+    width: 30%;
+    float: left;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo para o botão de remover */
+  .remove-button {
+    background-color: #FF6347;
+  }
+ 
+  
+  /* Animação de fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Comece com a opacidade 0 (invisível) */
+      transform: translateY(-20px); /* Adiciona um deslocamento para cima */
+    }
+    to {
+      opacity: 1; /* Termine com a opacidade 1 (visível) */
+      transform: translateY(0); /* Volta à posição original */
+    }
+  }
+  
+  /* Aplicar a animação de fade-in para elementos com a classe 'fade-in' */
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards; /* Nome da animação, duração, curva de animação */
+  }
+  
+  /* Media Queries para telas menores */
+  @media screen and (max-width: 768px) {
+    .dindins,
+    .carrinho {
+      width: 100%;
+      float: none;
+      margin-left: 0; /* Remova a margem na visualização mobile */
+      padding: 10px; /* Aumente o padding para separar os elementos */
+    }
+  
+    .dindin {
+      width: 100%;
+      margin-bottom: 20px; /* Aumente o espaçamento entre as empadas */
+      padding: 15px;
+      box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do elemento */
+    }
+  
+    .dindin img {
+      width: 100%;
+      height: auto;
+      border-radius: 0; /* Remova a borda arredondada para telas menores */
+    }
+  }
+  
+  /* Estilos para dispositivos com largura de até 480px, como smartphones */
+  @media screen and (max-width: 480px) {
+    .top-bar {
+      padding: 10px; /* Reduz o padding para economizar espaço */
+    }
+  
+    .dindin {
+      padding: 10px;
+    }
+  
+    button {
+      padding: 3px 8px; /* Reduz o padding do botão */
+    }
+  }
+  
